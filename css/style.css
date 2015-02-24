@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: block;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.main {
+	width: 100%;
+	min-height: 100%;
+}
+[_grid] {
+	float: left;
+	padding: 0 20px 0 20px;
+	position: relative;
+	min-height: 100vh;
+}
+
+[_grid="full"] {
+	width: calc(100% - 40px);
+}
+
+[_grid="1/2"] {
+	width: calc(50% - 40px);
+}
+
+[_grid="1/3"] {
+	width: calc(33% - 40px);
+}
+
+[_grid="2/3"] {	
+	width: calc(66% - 40px);
+}
+[_text] {
+	color: hsl(0,0%,10%);
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	font-weight: 100;
+}
+
+[_text~="headline"], [_text~="title"] {
+	color: hsl(0,0%,10%);
+}
+
+[_text~="display"] {
+	font-size: 2.8125em; /*45px*/
+	line-height: 4.5625em; /*73px*/
+}
+
+[_text~="headline"] {
+	font-size: 1.5em; /*24px*/
+	line-height: 2em; /*32px*/
+}
+
+[_text~="title"] {
+	font-size: 1.25em; /*20px*/
+	line-height: 2em; /*32px*/
+}
+
+[_text~="body"] {
+	font-size: 1em; /*16px*/
+	line-height: 1.625em; /*26px*/
+	/*text-align: justify;*/
+	/*padding-bottom: 1em;*/
+}
+
+[_text~="caption"] {
+	font-size: 0.875em; /*14px*/
+	line-height: 1.4375em; /*23px*/
+}
+
+[_text~="blockquote"] {
+	font-size: 1em; /*16px*/
+	line-height: 1.625em; /*26px*/
+	margin:  1.625em 1.625em 0;
+	padding-left: 1em;
+	font-style: italic;
+	border-left: 1px solid #ccc;
+}
+
+[_text~="link"] {
+	text-align: right;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px solid hsl(0, 0%,72%);
+	padding: 0;
+}
+
+[_text] > a {
+	color: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+}
+
+[_indent] {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+[_indent~="1"] {
+	margin-left: 32px;
+}
+
+[_indent~="2"] {
+	margin-left: 64px;
+}
+
+.logo {
+	display: inline-block;
+	padding-right: 16px;
+}
+
+.imgClipped {
+	width: 100%;
+}
+
+.shwam {
+	background-color: hsl(0, 0%,98%);
+	padding: 0 20px;
+	min-height: 100vh;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10px;
+}
+
+.card {
+	width: 400px;
+	background-color: hsl(0, 0%,98%);
+	padding: 0;
+}
+
+.bio-section {
+	padding: 1em 20px 1em 0;
+	border-bottom: 1px solid #ccc;
+}
